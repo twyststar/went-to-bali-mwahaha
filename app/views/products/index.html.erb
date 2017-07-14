@@ -4,8 +4,8 @@
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4 product-box">
-      <h4><%= link_to product.name, product_path(product), remote: true %></h4>
-      <div class="prod-inf">
+      <h4 class='click'><%= link_to product.name, product_path(product), remote: true %></h4>
+      <div class="prod-info">
         <img src="http://lorempixel.com/250/300/" alt="placeholder image">
         <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
