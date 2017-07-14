@@ -5,10 +5,12 @@ class OrderItemsController < ApplicationController
     @item = @order.order_items.new(item_params)
     @order.save
     session[:order_id] = @order.id
+
     respond_to do |f|
         f.html { redirect_to products_path}
         f.js
       end
+    flash[:notice] = "Added to cart!"
   end
 
   def update
@@ -27,7 +29,7 @@ class OrderItemsController < ApplicationController
         f.html { redirect_to cart_path }
         f.js
       end
-
+    flash[:notice] = "Removed from cart!"
   end
 
   private
