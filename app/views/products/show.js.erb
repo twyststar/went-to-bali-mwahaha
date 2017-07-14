@@ -1,4 +1,5 @@
 
-$('.click').click(function() {
-    $(this).next('.prod-info').slideToggle();
+$('.click').unbind().click(function(evt) {
+  evt.preventDefault();
+    $(this).next('.prod-info').fadeToggle();
 });
