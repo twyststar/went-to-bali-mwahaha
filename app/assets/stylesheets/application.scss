@@ -17,5 +17,13 @@
 @import "materialize";
 
 .prod-info {
+  z-index: 1000;
   display: none;
+}
+#product-box{
+  min-height: 550px;
+  min-width: 200px;
+  padding: 2%;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
 }
