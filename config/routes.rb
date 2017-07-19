@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root to: "products#index"
 
-  get '/sign_up' => 'users#new'
-  post '/users' => 'users#create'
+  # get '/sign_up' => 'users#new'
+  # post '/users' => 'users#create'
 
-  get '/sign_in' => 'sessions#new'
-  post '/sign_in' => 'sessions#create'
-  get 'sign_out' => 'sessions#destroy'
+  # get '/sign_in' => 'sessions#new'
+  # post '/sign_in' => 'sessions#create'
+  # get 'sign_out' => 'sessions#destroy'
 
   resources :products
   resources :order_items

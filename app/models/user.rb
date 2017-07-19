@@ -3,4 +3,11 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  has_many :orders
+
+  def previous_orders
+    self.orders.where(status: 2).includes(order_items: :product)
+  end
+  
 end

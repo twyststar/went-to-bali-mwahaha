@@ -16,15 +16,16 @@ Completed-
 * Ensure that users can't order a negative number of items.
 * Add product validations.
 * Add flash messages for signing up, signing in and signing out.
+* Add product update and delete functionality for admins.
+* Add admin links to navbar so admins can easily add, update and delete products.- rails_admin full dashboard added. All crud and notifications.
 
 Not Completed-
-* Add product update and delete functionality for admins.
+
 * Add admin flash messages for adding, updating and deleting products.
 * Add Paperclip for product image upload.
 * Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 * Add Stripe so users can pay when finalizing orders.
 * Add password validations to ensure a user's password is sufficiently complex.
-* Add admin links to navbar so admins can easily add, update and delete products.
 * Fix the row height for products, which can quickly become uneven.
 * Add integration testing for AJAX functionality.
 * Add further AJAX functionality where it might be useful.
@@ -40,6 +41,8 @@ _You will need Ruby/Rails and postgres to run this app locally._
 * _Back in the original window, run command 'rake db:create db:migrate'_
 * _Run command 'rails serve'_
 * _Open your web browser and type in 'localhost:3200'_
+
+# An initial Admin user will be created upon migration. Log in: q@q.com, password qqqqqqqq. This gives access to the Admin Dashboard for all Crud functionality. CHANGE THIS PASSWORD.
 
 ## Support and contact details
 

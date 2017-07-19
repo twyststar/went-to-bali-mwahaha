@@ -10,6 +10,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'cancancan'
 gem 'rails_admin', '>= 1.0.0.rc'
+gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'faker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
