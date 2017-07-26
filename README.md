@@ -42,7 +42,7 @@ _You will need Ruby/Rails and postgres to run this app locally._
 * _Run command 'rails serve'_
 * _Open your web browser and type in 'localhost:3200'_
 
-# An initial Admin user will be created upon migration. Log in: q@q.com, password qqqqqqqq. This gives access to the Admin Dashboard for all Crud functionality. CHANGE THIS PASSWORD.
+## An initial Admin user will be created upon migration. Log in: test@admin.com, password 'password'. This gives access to the Admin Dashboard for all Crud functionality. CHANGE THIS PASSWORD.
 
 ## Support and contact details
 
